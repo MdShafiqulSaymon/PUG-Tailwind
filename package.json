@@ -1,0 +1,27 @@
+{
+  "name": "pug-tailwind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build:css": "postcss src/tailwind.css -o dist/styles.css",
+  "build:views": "npx pug src/views -o dist",
+  "build": "npm run build:css && npm run build:views",
+  "dev": "concurrently \"npm run build:css -- --watch\" \"npx pug -w src/views -o dist\""
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "pug": "^3.0.3",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
