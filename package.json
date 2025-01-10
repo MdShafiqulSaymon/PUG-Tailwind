@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build:css": "postcss src/tailwind.css -o dist/styles.css",
-  "build:views": "npx pug src/views -o dist",
-  "build": "npm run build:css && npm run build:views",
-  "dev": "concurrently \"npm run build:css -- --watch\" \"npx pug -w src/views -o dist\""
-}
+    "build:css": "postcss src/tailwind.css -o public/styles.css",
+    "build:views": "npx pug src/views -o public",
+    "build": "npm run build:css && npm run build:views",
+    "dev": "concurrently \"npm run build:css -- --watch\" \"npx pug -w src/views -o dist\""
+  }
 ,
   "keywords": [],
   "author": "",
