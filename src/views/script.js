@@ -8,7 +8,7 @@ if (
   } else {
     document.documentElement.classList.remove("dark");
   }
-  const data=require("./data");
+  const data=require("./chart-init");
   res.render('content', {
     pictureUsers: data.pictureUsers,
     transactions: data.transactions
