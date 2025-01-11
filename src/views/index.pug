@@ -443,8 +443,8 @@ html(lang="en" class="light")
 
             div(class="flex flex-col justify-center w-full py-5 px-4 lg:px-0 max-w-[90rem] mx-auto gap-3")
               div(class="flex flex-wrap justify-between")
-                h3(class="text-center text-xl ") Latest Users
-                a(href="/accounts.html" class="cursor-pointer text-primary") View All
+                h3(class="text-center text-xl") Latest Users
+                a(href="/accounts.html" class="cursor-pointer text-blue-700") View All
               
               //- Table Wrapper
               div(class="w-full flex flex-col gap-4  p-5 rounded-lg border-2 overflow-x-auto")
@@ -815,17 +815,17 @@ script.
     }
 
     function updateThemeToggleButton(isDark) {
-    const moonIcon = themeToggleBtn.querySelector('.moon-icon');
-    const sunIcon = themeToggleBtn.querySelector('.sun-icon');
-    
-    if (isDark) {
-      moonIcon?.classList.add('hidden');
-      sunIcon?.classList.remove('hidden');
-    } else {
-      sunIcon?.classList.add('hidden');
-      moonIcon?.classList.remove('hidden');
+      const moonIcon = themeToggleBtn.querySelector('.moon-icon');
+      const sunIcon = themeToggleBtn.querySelector('.sun-icon');
+      
+      if (isDark) {
+        moonIcon?.classList.add('hidden');
+        sunIcon?.classList.remove('hidden');
+      } else {
+        sunIcon?.classList.add('hidden');
+        moonIcon?.classList.remove('hidden');
+      }
     }
-  }
 
     // Sidebar functionality
     window.toggleSidebar = function() {
