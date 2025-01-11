@@ -7,7 +7,8 @@
     "build:css": "postcss src/tailwind.css -o public/styles.css",
     "build:views": "npx pug src/views -o public",
     "build": "npm run build:css && npm run build:views",
-    "dev": "concurrently \"npm run build:css -- --watch\" \"npx pug -w src/views -o dist\""
+    "dev": "concurrently \"npm run build:css -- --watch\" \"npx pug -w src/views -o public\"",
+    "clean": "rm -rf public/*"
   }
 ,
   "keywords": [],
